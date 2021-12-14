@@ -6,7 +6,7 @@ To run this project you should execute the next command:
     node src/directories.js
 ```
 
-- You can change the input.txt file stored in src/input.txt
+- You can change the input.txt to send custom commands
 - After running the process an output.txt file is created with the expected results.
 
 ## Project structure

@@ -1,9 +1,15 @@
 # Directory Tree
 
-To run this project you should execute the next command:
+To run this project you should execute the next commands:
 
 ```bash
+    npm install
     node src/directories.js
+```
+
+If you want to run the test suite (Jest), please execute:
+```bash
+    npm test
 ```
 
 - You can change the input.txt to send custom commands

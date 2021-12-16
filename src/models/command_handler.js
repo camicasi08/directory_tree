@@ -62,8 +62,16 @@ class CommandHandler {
                 this.executionResults.push(`Cannot delete ${path} - ${searchQuery} does not exist`)
             }
         }else{
-            this.tree.root.removeChild(path)
-            this.executionResults.push(`${commandList.DELETE} ${path}`)
+            const searchQuery = ['', path]
+            const element = this.tree.search(searchQuery);
+            if(!element){
+                this.executionResults.push(`${commandList.DELETE} ${path}`)
+                this.executionResults.push(`Cannot delete ${path} - ${path} does not exist`)
+            }else{
+                this.tree.root.removeChild(path)
+                this.executionResults.push(`${commandList.DELETE} ${path}`)
+            }
+           
         }
     }
 
